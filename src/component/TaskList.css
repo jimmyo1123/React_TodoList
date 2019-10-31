@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Task items*/
+ul li {
+    height: 40px;
+    color: rgb(99, 97, 97);
+    background-color: #fff;
+    cursor: default;
+    list-style-type: none;
+    border: 1px solid #eee;
+}
+
+/*odd list items in different color*/
+ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.div-check {
+    height: 20px;
+    width: 10%;
+    margin-top: 10px;
+    padding-left: 2%;
+    float: left;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.icon_click:hover,
+.icon_click:focus {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.div-taskName {
+    float: left;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+
+.div-close {
+    float: right;
+    margin-top: 10px;
+    padding-right: 2%;
+    transition: 0.2s;
+}
+
+.done {
+    color: red;
+}
+
+.undone {
+    color: rgb(99, 97, 97);
+    text-decoration: line-through;
+}
